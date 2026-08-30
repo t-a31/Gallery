@@ -9,6 +9,17 @@
 </head>
 <body>
 
+  <audio id="weddingMusic" loop>
+  <source src="hafif.mp3" type="audio/mp3">
+</audio>
+
+<button id="musicBtn" class="music-btn" onclick="toggleMusic()" aria-label="Play Music">
+  <svg id="musicIcon" viewBox="0 0 24 24">
+    <path id="playPath" d="M8 5v14l11-7z"/>
+    <path id="pausePath" class="hidden" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+  </svg>
+</button>
+  
  <main class="main-container">
 
     <div class="gallery-item item-small-left">
@@ -231,17 +242,6 @@
     <span class="close-btn">&times;</span>
     <img id="lightbox-img" src="" alt="Enlarged view">
   </div>
-
-  <audio id="weddingMusic" loop>
-  <source src="hafif.mp3" type="audio/mp3">
-</audio>
-
-<button id="musicBtn" class="music-btn" onclick="toggleMusic()" aria-label="Play Music">
-  <svg id="musicIcon" viewBox="0 0 24 24">
-    <path id="playPath" d="M8 5v14l11-7z"/>
-    <path id="pausePath" class="hidden" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-  </svg>
-</button>
   
   <button id="autoScrollBtn" class="scroll-btn" aria-label="Scroll otomatis ke bawah">
   <svg viewBox="0 0 24 24">
